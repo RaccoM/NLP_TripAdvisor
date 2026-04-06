@@ -6,14 +6,6 @@ A content-based recommendation system that suggests similar travel experiences (
 
 ---
 
-## Project Structure
-
-```
-├── reviews83325.csv        # User reviews dataset
-├── Tripadvisor.csv         # Place descriptions and metadata (evaluation only)
-└── notebook.ipynb          # Main notebook (preprocessing, models, evaluation)
-```
-
 ## Methodology
 
 ### Data Preparation
@@ -48,13 +40,6 @@ Returns the position `(n-1)` of the first similar place found:
 | TF-IDF (improved) | 0.8779 | 6.3575 |
 
 TF-IDF performs slightly better at the fine-grained level (L2), suggesting it captures more specific vocabulary. BM25 achieves a lower L1 error, indicating it is more reliable at retrieving the correct general category.
-
-## Getting Started
-
-```bash
-pip install rank-bm25 scikit-learn pandas
-jupyter notebook notebook.ipynb
-```
 
 ## Authors
 
